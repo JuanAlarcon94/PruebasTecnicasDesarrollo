@@ -1,0 +1,5 @@
+server:
+  port: 5000
+product:
+  productDetailUrl: http://localhost:3001/product/%s
+  similarProductIdsUrl: http://localhost:3001/product/%s/similarids
