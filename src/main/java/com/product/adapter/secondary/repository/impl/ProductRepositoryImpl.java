@@ -33,13 +33,12 @@ public class ProductRepositoryImpl implements ProductRepository {
     }
 
     @Override
-    public Optional<ProductVO> getProductById(Long id) {
+    public ProductVO getProductById(Long id) {
         try {
             String url = String.format(productDetailUrl, id);
-            ProductVO product = restTemplate.getForObject(url, ProductVO.class);
-            return Optional.ofNullable(product);
+            return restTemplate.getForObject(url, ProductVO.class);
         } catch (Exception e) {
-            return Optional.empty();
+            return null;
         }
     }
 }

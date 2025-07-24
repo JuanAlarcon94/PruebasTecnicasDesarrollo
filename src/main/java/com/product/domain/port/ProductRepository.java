@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface ProductRepository
 {
-    Optional<ProductVO> getProductById(Long id);
+    ProductVO getProductById(Long id);
     List<String> getSimilarProductIds(Long id);
 
 }

@@ -3,6 +3,6 @@ package com.product.adapter.application;
 import com.product.adapter.application.model.ProductDTO;
 import java.util.List;
 
-public interface ProductsUseCase {
+public interface ProductUseCase {
     List<ProductDTO> getSimilarProducts(Long id);
 }
